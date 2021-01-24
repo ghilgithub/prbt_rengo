@@ -1,0 +1,203 @@
+<!-- django実行時のページはこれが表示できるかを基準にすること -->
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="メタディスクリプション(meta description)とは、ページコンテンツを100文字程度の文章で表した「概要」や「要約」のようなもので、HTMLの内に記述します。Googleのような検索エンジンの検索結果一覧ページで活用されています。">
+  <meta name="author" content="GHIL">
+
+  <title>参加者 - Prbt Haiku Database</title>
+
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- CSS -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style-responsive.css" rel="stylesheet">
+  <link href="css/prbt.css" rel="stylesheet">
+  
+  <!-- =======================================================
+    Template Name: Dashio
+    Template URL: https://templatemag.com/dashio-bootstrap-admin-template/
+    Author: TemplateMag.com
+    License: https://templatemag.com/license/
+  ======================================================= -->
+</head>
+
+<body>
+  <section id="container">
+
+    <!--header start-->
+    <header class="header black-bg">
+      <div class="sidebar-toggle-box">
+        <div class="fa fa-bars tooltips" data-placement="right"></div>
+      </div>
+      <a class="logo"><b><span>prbt</span> haiku database</b></a>
+      <div class="nav notify-row hidden-xs" id="top_menu">
+        <ul class="nav top-menu">
+          <li id="header_notification_bar">
+            <a href="person_table.html">
+              <i class="fa fa-user"></i>
+            </a>
+          </li>
+          <li id="header_notification_bar">
+            <a href="broadcast.html">
+              <i class="fa fa-calendar"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!--header end-->
+
+    <!--sidebar start-->
+    <aside>
+      <div id="sidebar" class="nav-collapse ">
+        <ul class="sidebar-menu" id="nav-accordion">
+          <p class="centered hidden-xs">
+            <a data-toggle="modal" data-target="#myModal"><img src="img/ui-hama.jpg" class="img-rounded" width="80"></a>
+          </p>
+          <li>
+            <a href="person_table.html">
+              <i class="fa fa-user"></i>
+              <span>参加者別データベース</span>
+            </a>
+          </li>
+          <li>
+            <a href="broadcast.html">
+              <i class="fa fa-calendar"></i>
+              <span>回別データベース</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+    <!--sidebar end-->
+
+    <!--main content start-->
+    <section id="main-content">
+      <section class="wrapper">
+        <div class="col-md-12">
+          <div class="align-center">
+            <h1><span id="h-name" class="nowrap"></span></h1>
+            <h3><span id="h-rank" class="label"></span></h3>
+          </div>
+        </div>
+
+        <h3><i class="fa fa-angle-right"></i> 成績</h3>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="content-panel" style="padding:0;">
+              <table id="table-person-info" class="table table-bordered table-striped table-condensed cf">
+                <tbody></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <h3 id="topage"><i class="fa fa-angle-right"></i> 俳句一覧</h3>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="content-panel">
+              <div class="align-right margin-right-30">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-default dropdown-toggle button-height-1" data-toggle="dropdown">
+                    並び替え <span class="caret"></span>
+                    </button>
+                  <ul class="dropdown-menu menu-width-130 ul-sort" role="menu">
+                    <li><a id="date-asc" href="javascript:void(0);">発表が早い順</a></li>
+                    <li><a id="date-desc" href="javascript:void(0);">発表が遅い順</a></li>
+                  </ul>
+                </div>
+              </div>
+              <table class="table table-advance table-hover" id="person_haiku_table">
+                <thead>
+                  <tr>
+                    <th>No</th>
+                    <th><i class="fa fa-pencil"></i> 俳句</th>
+                    <th><i class="fa fa-clipboard"></i> 査定</th>
+                    <th class="hidden-xs"><i class="fa fa-calendar"></i> お題</th>
+                    <th class="hidden-xs"><i class="fa fa-calendar"></i> 日付</th>
+                  </tr>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
+              <!--
+              <div class="hidden-xs align-right margin-right-20">
+                <nav aria-label="Page navigation">
+                  <ul class="pagination">
+                    <li class="page-item disabled"><a class="page-link" href="#">First</a></li>
+                    <li class="page-item disabled"><a class="page-link" href="#">Prev</a></li>
+                    <li class="page-item active">
+                      <span class="page-link">
+                        1<span class="sr-only">(current)</span>
+                      </span>
+                    </li>
+                    <li class="page-item disabled"><a class="page-link" href="#">Next</a></li>
+                    <li class="page-item disabled"><a class="page-link" href="?page=9">Last</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="visible-xs align-right margin-right-20">
+                <nav aria-label="Page navigation">
+                  <ul class="pagination">
+                    <li class="page-item disabled"><a class="page-link" href="#">First</a></li>
+                    <li class="page-item disabled"><a class="page-link" href="#">Prev</a></li>
+                    <li class="page-item active">
+                      <span class="page-link">
+                        1<span class="sr-only">(current)</span>
+                      </span>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                    <li class="page-item"><a class="page-link" href="?page=9#topage">Last</a></li>
+                  </ul>
+                </nav>
+              </div>
+              -->
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </section>
+    <!--main content end-->
+
+    <!--footer start-->
+    <footer class="site-footer">
+      <div class="text-center">
+        <p>
+          &copy; Copyrights <strong>Prbt_Rengo</strong>. All Rights Reserved
+        </p>
+        <div class="credits">
+          <!--
+            You are NOT allowed to delete the credit link to TemplateMag with free version.
+            You can delete the credit link only if you bought the pro version.
+            Buy the pro version with working PHP/AJAX contact form: https://templatemag.com/dashio-bootstrap-admin-template/
+            Licensing information: https://templatemag.com/license/
+          -->
+          Created with <a href="https://templatemag.com/dashio-bootstrap-admin-template/">Dashio</a> templated by <a href="https://templatemag.com/">TemplateMag</a>
+        </div>
+        <div id="page_top"><a href="#"><i class="fa fa-chevron-up"></i></a></div>
+      </div>
+    </footer>
+    <!--footer end-->
+
+  </section>
+  <!-- javascript -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script class="include" type="text/javascript" src="lib/jquery.dcjqaccordion.2.7.js"></script>
+  <script src="lib/jquery.scrollTo.min.js"></script>
+  <script src="lib/jquery.nicescroll.js" type="text/javascript"></script>
+  <script src="lib/common-scripts.js"></script>
+  <script src="lib/json_person.js"></script>
+  <script src="lib/prbt.js"></script>
+</body>
+</html>
