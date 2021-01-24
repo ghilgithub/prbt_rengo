@@ -217,6 +217,7 @@ window.onload = function () {
         { x: chartDate(2020, 12, 19), y: 12 },
         { x: chartDate(2020, 12, 26), y: 13 },
         { x: chartDate(2021, 1, 8), y: 14 },
+        { x: chartDate(2021, 1, 22), y: 14 },
       ]
     },{
       name: "もりりん",
@@ -243,6 +244,35 @@ window.onload = function () {
       ]
     },
     {
+      name: "えぬ",
+      legendText: "えぬ",
+      color: "blue",
+      markerType: "circle",
+      type: "line",
+      showInLegend: true,
+      xValueFormatString: formatDateStr,
+      dataPoints: [
+        { x: chartDate(2019, 12, 17), y: -5 },
+        { x: chartDate(2020, 1, 18), y: -5 },
+        { x: chartDate(2020, 2, 1), y: -4 },
+        { x: chartDate(2020, 2, 9), y: -4 },
+        { x: chartDate(2020, 4, 2), y: -4 },
+        { x: chartDate(2020, 4, 17), y: -3 },
+        { x: chartDate(2020, 5, 8), y: -3 },
+        { x: chartDate(2020, 5, 15), y: -3 },
+        { x: chartDate(2020, 6, 12), y: -3 },
+        { x: chartDate(2020, 7, 11), y: -2 },
+        { x: chartDate(2020, 8, 1), y: -1 },
+        { x: chartDate(2020, 8, 15), y: 1 },
+        { x: chartDate(2020, 9, 26), y: 1 },
+        { x: chartDate(2020, 10, 3), y: 1 },
+        { x: chartDate(2020, 11, 21), y: 1 },
+        { x: chartDate(2020, 12, 12), y: 2 },
+        { x: chartDate(2021, 1, 8), y: 2 },
+        { x: chartDate(2021, 1, 22), y: 3 },
+      ]
+    },
+    {
       name: "ギル",
       legendText: "ギル",
       color: "mediumturquoise",
@@ -262,6 +292,7 @@ window.onload = function () {
         { x: chartDate(2020, 12, 19), y: 2 },
         { x: chartDate(2021, 1, 1), y: 3 },
         { x: chartDate(2021, 1, 8), y: 3 },
+        { x: chartDate(2021, 1, 22), y: 3 },
       ]
     },
     {
@@ -292,34 +323,6 @@ window.onload = function () {
       ]
     },
     {
-      name: "えぬ",
-      legendText: "えぬ",
-      color: "blue",
-      markerType: "circle",
-      type: "line",
-      showInLegend: true,
-      xValueFormatString: formatDateStr,
-      dataPoints: [
-        { x: chartDate(2019, 12, 17), y: -5 },
-        { x: chartDate(2020, 1, 18), y: -5 },
-        { x: chartDate(2020, 2, 1), y: -4 },
-        { x: chartDate(2020, 2, 9), y: -4 },
-        { x: chartDate(2020, 4, 2), y: -4 },
-        { x: chartDate(2020, 4, 17), y: -3 },
-        { x: chartDate(2020, 5, 8), y: -3 },
-        { x: chartDate(2020, 5, 15), y: -3 },
-        { x: chartDate(2020, 6, 12), y: -3 },
-        { x: chartDate(2020, 7, 11), y: -2 },
-        { x: chartDate(2020, 8, 1), y: -1 },
-        { x: chartDate(2020, 8, 15), y: 1 },
-        { x: chartDate(2020, 9, 26), y: 1 },
-        { x: chartDate(2020, 10, 3), y: 1 },
-        { x: chartDate(2020, 11, 21), y: 1 },
-        { x: chartDate(2020, 12, 12), y: 2 },
-        { x: chartDate(2021, 1, 8), y: 2 },
-      ]
-    },
-    {
       name: "はっしー",
       legendText: "はっしー",
       color: "dimgray",
@@ -346,6 +349,28 @@ window.onload = function () {
       ]
     },
     {
+      name: "草臥男",
+      legendText: "草臥男",
+      color: "darkgreen",
+      markerType: "circle",
+      type: "line",
+      showInLegend: true,
+      xValueFormatString: formatDateStr,
+      dataPoints: [
+        { x: chartDate(2020, 7, 18), y: -5 },
+        { x: chartDate(2020, 8, 15), y: -5 },
+        { x: chartDate(2020, 8, 29), y: -5 },
+        { x: chartDate(2020, 9, 19), y: -4 },
+        { x: chartDate(2020, 10, 3), y: -2 },
+        { x: chartDate(2020, 10, 24), y: -2 },
+        { x: chartDate(2020, 12, 12), y: -2 },
+        { x: chartDate(2020, 12, 19), y: -2 },
+        { x: chartDate(2021, 1, 1), y: -1 },
+        { x: chartDate(2021, 1, 8), y: -1 },
+        { x: chartDate(2021, 1, 22), y: 1 },
+      ]
+    },
+    {
       name: "メガネ君",
       legendText: "メガネ君",
       color: "saddlebrown",
@@ -367,27 +392,6 @@ window.onload = function () {
         { x: chartDate(2020, 12, 12), y: -2 },
         { x: chartDate(2020, 12, 19), y: -2 },
         { x: chartDate(2021, 1, 1), y: -1 },
-      ]
-    },
-    {
-      name: "草臥男",
-      legendText: "草臥男",
-      color: "darkgreen",
-      markerType: "circle",
-      type: "line",
-      showInLegend: true,
-      xValueFormatString: formatDateStr,
-      dataPoints: [
-        { x: chartDate(2020, 7, 18), y: -5 },
-        { x: chartDate(2020, 8, 15), y: -5 },
-        { x: chartDate(2020, 8, 29), y: -5 },
-        { x: chartDate(2020, 9, 19), y: -4 },
-        { x: chartDate(2020, 10, 3), y: -2 },
-        { x: chartDate(2020, 10, 24), y: -2 },
-        { x: chartDate(2020, 12, 12), y: -2 },
-        { x: chartDate(2020, 12, 19), y: -2 },
-        { x: chartDate(2021, 1, 1), y: -1 },
-        { x: chartDate(2021, 1, 8), y: -1 },
       ]
     },
     {
@@ -437,6 +441,7 @@ window.onload = function () {
         { x: chartDate(2020, 12, 12), y: -2 },
         { x: chartDate(2021, 1, 1), y: -2 },
         { x: chartDate(2021, 1, 8), y: -2 },
+        { x: chartDate(2021, 1, 22), y: -2 },
       ]
     },
     {
@@ -476,6 +481,7 @@ window.onload = function () {
         { x: chartDate(2020, 12, 12), y: -2 },
         { x: chartDate(2021, 1, 1), y: -2 },
         { x: chartDate(2021, 1, 8), y: -2 },
+        { x: chartDate(2021, 1, 22), y: -2 },
       ]
     },
     {
@@ -494,6 +500,7 @@ window.onload = function () {
         { x: chartDate(2020, 11, 21), y: -2 },
         { x: chartDate(2020, 12, 12), y: -2 },
         { x: chartDate(2021, 1, 8), y: -2 },
+        { x: chartDate(2021, 1, 22), y: -2 },
       ]
     },
     {
