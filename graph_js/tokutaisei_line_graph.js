@@ -625,5 +625,19 @@ window.onload = function () {
   function chartDate(year, month, day){
     return new Date(year, month-1, day);
   }
+
+  $('.all-remove').click(function () {
+    for (var i = 0; i < dateChart.data.length; i++){
+      dateChart.data[i].set('visible', false);
+    }
+    dateChart.render();
+  });
+  $('.all-select').click(function () {
+    for (var i = 0; i < dateChart.data.length; i++){
+      dateChart.data[i].set('visible', true);
+    }
+    dateChart.axisY[0].set("maximum", 15);
+    dateChart.render();
+  });
   
 }
