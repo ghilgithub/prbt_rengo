@@ -218,6 +218,7 @@ window.onload = function () {
         { x: chartDate(2020, 12, 26), y: 13 },
         { x: chartDate(2021, 1, 8), y: 14 },
         { x: chartDate(2021, 1, 22), y: 14 },
+        { x: chartDate(2021, 1, 29), y: 13 },
       ]
     },{
       name: "もりりん",
