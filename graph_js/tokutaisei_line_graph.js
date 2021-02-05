@@ -394,6 +394,7 @@ window.onload = function () {
         { x: chartDate(2020, 12, 12), y: -2 },
         { x: chartDate(2020, 12, 19), y: -2 },
         { x: chartDate(2021, 1, 1), y: -1 },
+        { x: chartDate(2021, 2, 5), y: -1 },
       ]
     },
     {
@@ -532,6 +533,7 @@ window.onload = function () {
       xValueFormatString: formatDateStr,
       dataPoints: [
         { x: chartDate(2021, 1, 8), y: -5 },
+        { x: chartDate(2021, 2, 5), y: -5 },
       ]
     }]
   });
