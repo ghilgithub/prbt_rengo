@@ -542,6 +542,18 @@ window.onload = function () {
         { x: chartDate(2021, 1, 8), y: -5 },
         { x: chartDate(2021, 2, 5), y: -5 },
       ]
+    },
+    {
+      name: "鳥田政宗",
+      legendText: "鳥田政宗",
+      color: "gold",
+      markerType: "square",
+      type: "line",
+      showInLegend: true,
+      xValueFormatString: formatDateStr,
+      dataPoints: [
+        { x: chartDate(2021, 3, 5), y: -5 },
+      ]
     }]
   });
   dateChart.render();
