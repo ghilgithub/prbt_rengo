@@ -300,6 +300,7 @@ window.onload = function () {
         { x: chartDate(2021, 1, 22), y: 3 },
         { x: chartDate(2021, 3, 12), y: 3 },
         { x: chartDate(2021, 4, 2), y: 4 },
+        { x: chartDate(2021, 4, 9), y: 5 },
       ]
     },
     {
@@ -383,6 +384,7 @@ window.onload = function () {
         { x: chartDate(2021, 2, 12), y: 1 },
         { x: chartDate(2021, 3, 12), y: 1 },
         { x: chartDate(2021, 4, 2), y: 2 },
+        { x: chartDate(2021, 4, 9), y: 2 },
       ]
     },
     {
@@ -442,6 +444,7 @@ window.onload = function () {
         { x: chartDate(2021, 1, 29), y: -2 },
         { x: chartDate(2021, 2, 12), y: -1 },
         { x: chartDate(2021, 3, 12), y: -1 },
+        { x: chartDate(2021, 4, 9), y: -1 },
       ]
     },
     {
@@ -506,6 +509,7 @@ window.onload = function () {
         { x: chartDate(2021, 1, 22), y: -2 },
         { x: chartDate(2021, 2, 12), y: -2 },
         { x: chartDate(2021, 3, 12), y: -2 },
+        { x: chartDate(2021, 4, 9), y: -2 },
       ]
     },
     {
@@ -558,6 +562,7 @@ window.onload = function () {
         { x: chartDate(2021, 1, 8), y: -5 },
         { x: chartDate(2021, 2, 5), y: -5 },
         { x: chartDate(2021, 3, 12), y: -5 },
+        { x: chartDate(2021, 4, 9), y: -4 },
       ]
     },
     {
