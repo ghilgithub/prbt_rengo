@@ -1,7 +1,13 @@
 window.onload = function () {
 
+  // 本日日付取得
+  var now = new Date();
+  var y = now.getFullYear();
+  var m = ('0' + (now.getMonth() + 1)).slice(-2);
+  $('input[type="month"]').attr('max', y + '-' + m);
+  $('input[name="to"]').attr('value', y + '-' + m);
+
   var formatDateStr = "YYYY年M月D日";
-  
   var dateChart = new CanvasJS.Chart("chartContainer", {
     animationEnabled: true, //グラフのアニメーション化
     theme: "light2",
@@ -330,6 +336,7 @@ window.onload = function () {
         { x: chartDate(2021, 2, 12), y: 1 },
         { x: chartDate(2021, 3, 12), y: 3 },
         { x: chartDate(2021, 4, 2), y: 3 },
+        { x: chartDate(2021, 4, 16), y: 4 },
       ]
     },
     {
@@ -359,6 +366,7 @@ window.onload = function () {
         { x: chartDate(2020, 12, 19), y: 2 },
         { x: chartDate(2021, 1, 29), y: 2 },
         { x: chartDate(2021, 3, 12), y: 2 },
+        { x: chartDate(2021, 4, 16), y: 3 },
       ]
     },
     {
@@ -466,6 +474,7 @@ window.onload = function () {
         { x: chartDate(2020, 9, 23), y: -2 },
         { x: chartDate(2020, 12, 5), y: -2 },
         { x: chartDate(2021, 1, 1), y: -2 },
+        { x: chartDate(2021, 4, 11), y: -2 },
       ]
     },
     {

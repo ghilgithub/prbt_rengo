@@ -133,18 +133,19 @@
                   <tr class="meijin">
                     <td colspan="2" class="meijin">名人 4段</td>
                     <td>
+                      <a href="person.html?id=9">はっしー</a>
                     </td>
                   </tr>
                   <tr class="meijin">
                     <td colspan="2" class="meijin">名人 3段</td>
                     <td>
-                      <a href="person.html?id=9">はっしー</a>
+                      <a href="person.html?id=5">京のさち</a>
                     </td>
                   </tr>
                   <tr class="meijin">
                     <td colspan="2" class="meijin">名人 2段</td>
                     <td>
-                      <a href="person.html?id=5">京のさち</a> , <a href="person.html?id=12">草臥男</a>
+                      <a href="person.html?id=12">草臥男</a>
                     </td>
                   </tr>
                   <tr>
@@ -202,10 +203,18 @@
               <div id="chartContainer" style="height: 370px; max-width: 2000px; margin: 0px auto;"></div>
             </div>
           </div>
-        </div>
-        <div class="row" style="margin-top: 15px;margin-left: 10px;">
-          <button class="btn btn-info all-select">全選択</button>&ensp;
-          <button class="btn btn-info all-remove">選択解除</button>
+          <div class="row">
+            <div class="col-md-2" style="margin: 12px 15px 0px 15px;">
+              <button class="btn btn-info btn-block all-select">全選択</button>
+            </div>
+            <div class="col-md-5" style="margin: 12px 15px 0px 15px;">
+              <div class="input-group input-large" data-date="01/01/2014" data-date-format="mm/dd/yyyy">
+                <input type="month" class="form-control dpd1" name="graph-from" min="2019-12" value="2019-12">
+                <span class="input-group-addon">To</span>
+                <input type="month" class="form-control dpd2" name="graph-to" min="2019-12">
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </section>
@@ -239,9 +248,8 @@
   <script src="lib/jquery.scrollTo.min.js"></script>
   <script src="lib/jquery.nicescroll.js" type="text/javascript"></script>
   <script src="lib/common-scripts.js"></script>
-  <script src="lib/json_person.js"></script>
   <script src="lib/prbt.js"></script>
-  <script src="graph_js/tokutaisei_line_graph.js"></script>
+  <script src="lib/person_table.js"></script>
   <script src="graph_js/canvasjs.min.js"></script>
 </body>
 </html>
