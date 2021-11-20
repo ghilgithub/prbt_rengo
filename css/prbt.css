@@ -71,7 +71,16 @@
   background-color: #c91f1a;
 }
 .label-spring {
-  background-color: #ff1493;
+  background-color: deeppink;
+}
+.label-summer {
+  background-color: firebrick;
+}
+.label-autumn {
+  background-color: chocolate;
+}
+.label-winter {
+  background-color: lightseagreen;
 }
 
 /* 右、左、中央寄せ */
